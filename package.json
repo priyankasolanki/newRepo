@@ -1,5 +1,5 @@
 {
-  "name": "newrepo",
+  "name": "myrepopriyanka",
   "version": "1.0.0",
   "description": "my first newrepo module",
   "main": "app.js",
@@ -14,7 +14,7 @@
     "newrepo",
     "app"
   ],
-  "author": "",
+  "author": "priyanka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/priyankasolanki/newRepo/issues"
