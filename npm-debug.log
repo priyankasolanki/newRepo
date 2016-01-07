@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\Projects\\newRepo',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming\\npm-cache\\newrepo\\1.0.0\\package.tgz',
+9 verbose tar pack   'D:\\Projects\\newRepo' ]
+10 verbose tarball C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package.tgz
+11 verbose folder D:\Projects\newRepo
+12 info prepublish newrepo@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package.tgz
+14 silly cache afterAdd newrepo@1.0.0
+15 verbose afterAdd C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package\package.json written
+17 silly publish { name: 'newrepo',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'my first newrepo module',
+17 silly publish   main: 'app.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/priyankasolanki/newRepo.git' },
+17 silly publish   keywords: [ 'newrepo', 'app' ],
+17 silly publish   author: '',
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/priyankasolanki/newRepo/issues' },
+17 silly publish   homepage: 'https://github.com/priyankasolanki/newRepo#readme',
+17 silly publish   readme: '# newRepo\r\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'efa99c94c6b95679feaf3db01179645d2b1f3b77',
+17 silly publish   _id: 'newrepo@1.0.0',
+17 silly publish   _shasum: '0ab81c8418018bda4896185f0d84dd1354460f0d',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name newrepo
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/newrepo
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\newrepo\1.0.0\package.tgz
+25 verbose request uri https://registry.npmjs.org/newrepo
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 10:22:13 AM
+28 verbose request using bearer token for auth
+29 verbose request id be1164a31e8a5df1
+30 http request PUT https://registry.npmjs.org/newrepo
+31 http 403 https://registry.npmjs.org/newrepo
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '99',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 07 Jan 2016 04:52:17 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1452142336.534319,VS0,VE789' }
+33 verbose request invalidating C:\Windows\system32\config\systemprofile\AppData\Roaming\npm-cache\registry.npmjs.org\newrepo on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: You do not have permission to publish 'newrepo'. Are you logged in as the correct user? : newrepo
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:247:14)
+35 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
+35 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:354:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1207:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1153:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 403
+37 verbose pkgid newrepo
+38 verbose cwd D:\Projects\newRepo
+39 error Windows_NT 6.1.7601
+40 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v0.12.7
+42 error npm  v2.11.3
+43 error code E403
+44 error You do not have permission to publish 'newrepo'. Are you logged in as the correct user? : newrepo
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
